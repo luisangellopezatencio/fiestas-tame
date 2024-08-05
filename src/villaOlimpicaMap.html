@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+        /* Estilos para la transición */
+        .fade-enter, .fade-leave-to {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center w-screen h-screen relative">
+    <a href="index.html#cronograma" class="absolute top-4 left-4 bg-blue-500 text-white px-4 py-2 rounded" id="backButton">Volver</a>
+    <iframe id="content" class="w-1/2 fade-enter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5617544473985!2d-71.75680122597211!3d6.450265424012095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ec7d3ba24e1bd%3A0xfbe910daa4d08e10!2sVilla%20Olimpica!5e0!3m2!1ses!2sco!4v1722884985071!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+        document.getElementById('backButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            const iframe = document.getElementById('content');
+            iframe.classList.add('fade-leave-active');
+            iframe.classList.remove('fade-enter');
+            
+            setTimeout(() => {
+                window.location.href = this.href;
+            }, 500);
+        });
+        
+        window.addEventListener('load', () => {
+            const iframe = document.getElementById('content');
+            iframe.classList.add('fade-enter-active');
+            setTimeout(() => {
+                iframe.classList.remove('fade-enter');
+                iframe.classList.remove('fade-enter-active');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
+

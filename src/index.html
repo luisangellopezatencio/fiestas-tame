@@ -55,16 +55,8 @@
         id="navegacion"
         class="w-[100%] flex justify-center items-center gap-3 mt-5 py-4 z-50"
       >
-        <li id="search">
-          <img
-              src="./img/icon-search.svg"
-              alt="buscar"
-              class="w-[40px] h-[40px] cursor-pointer"
-          />
-        </li>
         <li class="cursor-pointer">
-          <a id="hamburguesa"
-             href="#hero"
+          <a id="hamburguesa" href="#hero"
             ><img
               src="./img/icon-nav.svg"
               alt="abrir barra de navegación"
@@ -79,278 +71,492 @@
           >
         </li>
       </ul>
-      
 
-    <form class="hidden items-center max-w-lg mx-auto">   
+      <form class="hidden items-center max-w-lg mx-auto">
         <label for="voice-search" class="sr-only">Search</label>
-        <button id="volver-btn"><img src="./img/icon-arrow-left.svg" alt="volver"></button>
-        <div class="relative w-full">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.15 5.6h.01m3.337 1.913h.01m-6.979 0h.01M5.541 11h.01M15 15h2.706a1.957 1.957 0 0 0 1.883-1.325A9 9 0 1 0 2.043 11.89 9.1 9.1 0 0 0 7.2 19.1a8.62 8.62 0 0 0 3.769.9A2.013 2.013 0 0 0 13 18v-.857A2.034 2.034 0 0 1 15 15Z"/>
-                </svg>
-            </div>
-            <input type="text" id="voice-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar en cronograma ..." required />
-            <button type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
-                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z"/>
-                </svg>
-            </button>
-        </div>
-        <button type="submit" class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-[#EBB73F] rounded-lg border border-blue-300 hover:bg-[#7a6021] focus:ring-4 focus:outline-none focus:ring-blue-300">
-            <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>Buscar
+        <button id="volver-btn">
+          <img src="./img/icon-arrow-left.svg" alt="volver" />
         </button>
-    </form>
+        <div class="relative w-full">
+          <div
+            class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 21 21"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11.15 5.6h.01m3.337 1.913h.01m-6.979 0h.01M5.541 11h.01M15 15h2.706a1.957 1.957 0 0 0 1.883-1.325A9 9 0 1 0 2.043 11.89 9.1 9.1 0 0 0 7.2 19.1a8.62 8.62 0 0 0 3.769.9A2.013 2.013 0 0 0 13 18v-.857A2.034 2.034 0 0 1 15 15Z"
+              />
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="voice-search"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Buscar en cronograma ..."
+            required
+          />
+          <button
+            type="button"
+            class="absolute inset-y-0 end-0 flex items-center pe-3"
+          >
+            <svg
+              class="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 16 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <button
+          type="submit"
+          class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-[#EBB73F] rounded-lg border border-blue-300 hover:bg-[#7a6021] focus:ring-4 focus:outline-none focus:ring-blue-300"
+        >
+          <svg
+            class="w-4 h-4 me-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+            /></svg
+          >Buscar
+        </button>
+      </form>
 
-
-      <div id="barraNavegacion" class="h-full w-[220px] absolute bg-black top-0 translate-x-[-220px]">
-        <p class="p-5 mt-5 text-2xl text-center font-bold border-b-2 border-white">
-          EVENTOS
+      <div
+        id="barraNavegacion"
+        class="h-full w-[220px] absolute bg-black top-0 translate-x-[-220px]"
+      >
+        <p
+          class="p-5 mt-5 text-2xl text-center font-bold border-b-2 border-white"
+        >
+          MENÚ
         </p>
         <ul class="font-semibold p-5 mt-2 ml-4 text-left">
-            <li class="mb-6"><a href="#cronograma" class="border-b-2 border-[#EBB73F]">CRONOGRAMA</a></li>
-            <li><a href="#patrocinadores" class="border-b-2 border-[#EBB73F] ">PATROCINADORES</a></li>
+          <li class="mb-6">
+            <a href="#cronograma" class="border-b-2 border-[#EBB73F]"
+              >CRONOGRAMA</a
+            >
+          </li>
+          <li>
+            <a href="#patrocinadores" class="border-b-2 border-[#EBB73F]"
+              >PATROCINADORES</a
+            >
+          </li>
         </ul>
       </div>
     </section>
     <section id="cronograma">
-      <div class="bg-neutral-900 text-neutral-200 p-6 sm:p-10">
-        <div class="space-y-8">
-          <div class="text-center">
-            <h1 class="text-2xl font-bold">FIESTAS PATRONALES</h1>
-            <p class="text-lg">15 al 19 de agosto 2024</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <div
-              class="relative w-full max-w-2xl pl-6 after:absolute after:inset-y-0 after:w-px after:bg-neutral-500"
-            >
-              <div class="grid gap-6 text-sm relative">
-                <!-- Día Jueves 15 -->
-                <div class="flex items-start gap-4">
-                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
-                  <div>
-                    <div class="font-medium">Jueves 15</div>
-                    <div class="space-y-4">
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          2:00 pm
-                        </div>
-                        <p>
-                          Recibimiento de candidatas aspirantes al XLVI reinado
-                          internacional del llano.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          5:00 pm
-                        </div>
-                        <p>Eucaristía, iglesia principal de Tame.</p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          6:00 pm
-                        </div>
-                        <p>
-                          Procesión y serenata a la virgen de nuestra señora de
-                          la asunción de Tame.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          7:30 pm
-                        </div>
-                        <p>
-                          Rueda de prensa y entrega de llaves de la ciudad.
-                          Parque central general Santander.
-                        </p>
-                      </div>
+  <div class="bg-neutral-900 text-neutral-200 p-6 sm:p-10">
+    <div class="space-y-8">
+      <div class="text-center">
+        <h1 class="text-2xl font-bold">FIESTAS PATRONALES</h1>
+        <p class="text-lg">15 al 19 de agosto 2024</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="relative w-full max-w-2xl pl-6 after:absolute after:inset-y-0 after:w-px after:bg-neutral-500">
+          <div class="grid gap-6 text-sm relative">
+            <!-- Día Jueves 15 -->
+            <div class="flex items-start gap-4">
+              <div class="aspect-square w-3 bg-primary rounded-full"></div>
+              <div>
+                <div class="font-medium">Jueves 15</div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      2:00 pm
                     </div>
+                    <p>Recibimiento de candidatas aspirantes al XLVI reinado internacional del llano.</p>
+                    <a href="./hotelTameRealMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      5:00 pm
+                    </div>
+                    <p>Eucaristía, iglesia Nuestra Señora de la Asunción.</p>
+                    <a href="./iglesiaNuestraSeñoraAsuMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      6:00 pm
+                    </div>
+                    <p>Procesión y serenata a la virgen de nuestra señora de la asunción de Tame.</p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      7:30 pm
+                    </div>
+                    <p>Rueda de prensa y entrega de llaves de la ciudad a las candidatas al XLVI reinado internacional del llano</p>
+                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
                   </div>
                 </div>
-                <!-- Día Viernes 16 -->
-                <div class="flex items-start gap-4">
-                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
-                  <div>
-                    <div class="font-medium">Viernes 16</div>
-                    <div class="space-y-4">
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          4:00 am
-                        </div>
-                        <p>
-                          Alborada con banda papayera. Parque central general
-                          Santander.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          7:30 am
-                        </div>
-                        <p>
-                          Desfile de carrozas con participación de colonias
-                          radicadas en el municipio.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          10:00 am
-                        </div>
-                        <p>
-                          Exposición artesanal y de comidas de la cocina
-                          colombiana. Parque general Santander.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          2:00 pm
-                        </div>
-                        <p>
-                          Entrenamiento de coleo. Organiza: club de coleo Juan
-                          la Garza. Manga de coleo los tautacos.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          5:00 pm
-                        </div>
-                        <p>
-                          Inicio del XVIII festival internacional de música
-                          llanera GIRARA DE ORO. Fórum de la cultura.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          9:00 pm
-                        </div>
-                        <p>
-                          Presentación e imposición de bandas a las candidatas
-                          aspirantes al XLV reinado internacional del llano.
-                          Fórum de la cultura Miguel Ángel Martin.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          10:00 pm
-                        </div>
-                        <p>
-                          Baile popular noche de talento juvenil, DJ Memo
-                          Junior; grupo estación vallenata, Ciro Quiñones.
-                          Lugar: club de coleo Juan la Garza.
-                        </p>
-                      </div>
+              </div>
+            </div>
+            <!-- Día Viernes 16 -->
+            <div class="flex items-start gap-4">
+              <div class="aspect-square w-3 bg-primary rounded-full"></div>
+              <div>
+                <div class="font-medium">Viernes 16</div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      4:00 am
                     </div>
+                    <p>Alborada con banda papayera.</p>
+                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      7:30 am
+                    </div>
+                    <p>Desfile de colonias y cabalgata.</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:00 am
+                    </div>
+                    <p>Exposición artesanal y de comidas de la cocina colombiana.</p>
+                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      2:00 pm
+                    </div>
+                    <p>Coleo de entrenamiento. Organiza: club de coleo Juan la Garza.</p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      4:00 pm
+                    </div>
+                    <p>Inicio del XVIII festival internacional de música llanera GIRARA DE ORO.</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      9:00 pm
+                    </div>
+                    <p>Presentación e imposición de bandas a las candidatas aspirantes al XLVI reinado internacional del llano.</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      9:30 pm
+                    </div>
+                    <p>Presentación grupo de danza Cunaguaro.</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:00 pm
+                    </div>
+                    <p>Invitado especial: Miguel trujillo</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:00 pm
+                    </div>
+                    <p>Baile popular: Noche de talento juvenil, DJ Memo Junior, grupo Estación Vallenata</p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:30 pm
+                    </div>
+                    <p>Continuación del festival internacional Girara de Oro</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      1:00 am
+                    </div>
+                    <p>Invitado especial: Dixon Soto</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
                   </div>
                 </div>
-                <!-- Día Sábado 17 -->
-                <div class="flex items-start gap-4">
-                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
-                  <div>
-                    <div class="font-medium">Sábado 17</div>
-                    <div class="space-y-4">
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          7:30 am
-                        </div>
-                        <p>
-                          Joropera "zapateando en la tierra de Miguel Ángel
-                          Martin".
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          8:00 am
-                        </div>
-                        <p>
-                          Privado con participantes al festival girara de oro.
-                          Casa de la cultura.
-                        </p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          10:00 am
-                        </div>
-                        <p>Exposición artesanal y de comidas.</p>
-                      </div>
-                      <div class="flex items-center gap-4">
-                        <div
-                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
-                        >
-                          2:00 pm
-                        </div>
-                        <p>Evento no especificado.</p>
-                      </div>
+              </div>
+            </div>
+            <!-- Día Sábado 17 -->
+            <div class="flex items-start gap-4">
+              <div class="aspect-square w-3 bg-primary rounded-full"></div>
+              <div>
+                <div class="font-medium">Sábado 17</div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      4:00 am
                     </div>
+                    <p>Alborada con Papayera</p>
+                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      5:00 am
+                    </div>
+                    <p>Concurso de la modalidad de conocimiento criollo</p>
+                    <a href="./casaCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      7:30 am
+                    </div>
+                    <p>Joropera "Zapateando en la tierra de Miguel Ángel Martin".</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      8:00 am
+                    </div>
+                    <p>Privado con participantes al festival Girara de Oro</p>
+                    <a href="./casaCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:00 am
+                    </div>
+                    <p>Exposición artesanal y gastronomía</p>
+                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      2:00 pm
+                    </div>
+                    <p>Concurso de la modalidad de conocimiento Criollo</p>
+                    <a href="./casaCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      2:00 pm
+                    </div>
+                    <p>Inicio de la XXIX versión de coleo la Garza de Oro. Coleo internacional de espectáculo femenino la Garza de Oro. Organiza: club de coleo Juan la Garza</p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      6:00 pm
+                    </div>
+                    <p>Final del XXVIII festival internacional de música llanera Girara de Oro</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      8:30 pm
+                    </div>
+                    <p>Invitado especial: Armando Reyes</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      9:00 pm
+                    </div>
+                    <p>Presentación artística de las candidatas aspirantes al XLVI Reinado Internacional del Llano</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:00 pm
+                    </div>
+                    <p>Baile popular, festival de orquestas Tame 2024: Zafra Orquesta, Maquinaria Campesina, Tropicolombia, Los del Meke. Lugar: Club de coleo Juan la Garza.</p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      11:30 pm
+                    </div>
+                    <p>Premiación del XVIII Festival Internacional de música llanera Girara de Oro</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      12:00 am
+                    </div>
+                    <p>Presentación especial de el Cholo Valderrama, Yesid Ortiz, Daniel Gualdrón y Walter Silva.</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
                   </div>
                 </div>
-                <!-- Agrega más días aquí según sea necesario -->
+              </div>
+            </div>
+            <!-- Día Domingo 18 -->
+            <div class="flex items-start gap-4">
+              <div class="aspect-square w-3 bg-primary rounded-full"></div>
+              <div>
+                <div class="font-medium">Domingo 18</div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:00 am
+                    </div>
+                    <p>Exposición artesanal y gastronomía</p>
+                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      11:00 am
+                    </div>
+                    <p>Presentación de candidatas al XLVI Reinado Internacional del Llano, en traje de baño. Lugar: Complejo deportivo Villa Olímpica.</p>
+                    <a href="./villaOlimpicaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      11:30 am
+                    </div>
+                    <p>Invitados especiales: Amanda Betancourt, Eparquio Pérez y Karen Tovar</p>
+                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      2:00 pm
+                    </div>
+                    <p>Final de la XXIX versión de coleo la Garza de Oro. Final de coleo femenino la Garza de Oro. Lugar: Manga de coleo los Tautacos.</p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      8:00 pm
+                    </div>
+                    <p>Invitados especiales: Grupo musical CARPEDIEM</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      8:30 pm
+                    </div>
+                    <p>Invitado especial: Edwin Ergeua</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      9:00 pm
+                    </div>
+                    <p>Presentación de candidatas aspirantes al XLVI Reinado Internacional del Llano</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      9:30 pm
+                    </div>
+                    <p>Invitada especial: Victoria Rodríguez</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      10:00 pm
+                    </div>
+                    <p>Presentación especial de Joseito Oviedo</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      11:00 pm
+                    </div>
+                    <p>Acto de premiación y coronación del XLVI Reinado Internacional del Llano</p>
+                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      11:00 pm
+                    </div>
+                    <p>Baile de coronación, noche de super conciertos: Grupo Dinastia, Karen Lizarazo, Shows pirotecnicos, los rayos de Mexico. Lugar: Club de coleo Juan la Garza. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Día Lunes 19 -->
+            <div class="flex items-start gap-4">
+              <div class="aspect-square w-3 bg-primary rounded-full"></div>
+              <div>
+                <div class="font-medium">Lunes 19</div>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      2:00 pm
+                    </div>
+                    <p>Coleo sub-21. Lugar: Manga de coleo los Tautacos.</p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
+                      3:00 pm
+                    </div>
+                    <p>Tarde de humor: Invitados especiales: Alerta y Piroberta. Lugar: Manga de coleo Juan la Garza.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
+    </div>
+  </div>
     </section>
-        <section id="patrocinadores" class="w-full py-12 md:py-24 lg:py-32">
-        <div class="container mx-auto max-w-6xl px-4 text-center lg:text-left">
+
+<!-- Patrocinadores -->
+    <section id="patrocinadores" class="w-full py-12 md:py-24 lg:py-32">
+      <div class="container mx-auto max-w-6xl px-4 text-center lg:text-left">
         <div class="mb-8">
-            <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nuestros Patrocinadores</h2>
-            <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Estamos agradecidos por todos los patrocinadores que nos han apoyado.
-            </p>
+          <h2
+            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+          >
+            Nuestros Patrocinadores
+          </h2>
+          <p
+            class="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+          >
+            Estamos agradecidos por todos los patrocinadores que nos han
+            apoyado.
+          </p>
         </div>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Sponsor Card Start -->
-            <div class="rounded-lg border-t bg-background p-4">
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
             <div class="flex items-center justify-between">
-                <img
-                src="./img/jetxel-logo.jpg"
+              <img
+                src="./img/PATROCINADORES/1 - ALCALDIA DE TAME.jpg"
                 alt="Sponsor Logo 1"
                 class="aspect-[2/1] h-16 object-contain"
-                />
-                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion">
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm 
+                font-medium ring-offset-background transition-colors focus-visible:outline-none 
+                focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
+                disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
                 Ubicación
-                </button>
+              </button>
             </div>
             <div class="mt-4 border-b">
-                <h3 class="flex">
+              <h3 class="flex">
                 <button
-                    type="button"
-                    aria-controls="content1"
-                    aria-expanded="false"
-                    id="header1"
-                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium
+                   transition-all hover:underline ubicacion"
                 >
-                    <span class="font-medium">Jetxcel</span>
-                    <svg
+                  <span class="font-medium">Alcaldia municipal de Tame</span>
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -361,49 +567,60 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
-                    >
+                  >
                     <path d="m6 9 6 6 6-6"></path>
-                    </svg>
+                  </svg>
                 </button>
-                </h3>
-                <div
+              </h3>
+              <div
                 id="content1"
                 hidden
                 role="region"
                 aria-labelledby="header1"
                 class="overflow-hidden text-sm transition-all"
-                ></div>
+              ></div>
             </div>
-            <div  class="h-0 w-[100%]" id="ubicacion-sponsor1">
-                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-            </div>
-            <!-- Sponsor Card End -->
+          </div>
+          <!-- Sponsor Card End -->
 
-            <!-- Duplicate the above block for each sponsor -->
-            <!-- Sponsor Card Start -->
-            <div class="rounded-lg border-t bg-background p-4">
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
             <div class="flex items-center justify-between">
-                <img
-                src="./img/sponsor2.jpg"
+              <img
+                src="./img/PATROCINADORES/2 - MIGUEL BASTOS ALCALDE DE TAME.png"
                 alt="Sponsor Logo 2"
                 class="aspect-[2/1] h-16 object-contain"
-                />
-                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
                 Ubicación
-                </button>
+              </button>
             </div>
             <div class="mt-4 border-b">
-                <h3 class="flex">
+              <h3 class="flex">
                 <button
-                    type="button"
-                    aria-controls="content2"
-                    aria-expanded="false"
-                    id="header2"
-                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline"
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                    <span class="font-medium">Innova Center</span>
-                    <svg
+                  <span class="font-medium">Miguel Bastos Alcalde</span>
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -414,45 +631,64 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
-                    >
+                  >
                     <path d="m6 9 6 6 6-6"></path>
-                    </svg>
+                  </svg>
                 </button>
-                </h3>
-                <div
+              </h3>
+              <div
                 id="content2"
                 hidden
                 role="region"
                 aria-labelledby="header2"
                 class="overflow-hidden text-sm transition-all"
-                ></div>
+              ></div>
             </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-            <!-- Sponsor Card End -->
+          </div>
+          <!-- Sponsor Card End -->
 
-            <!-- Sponsor Card Start -->
-            <div class="rounded-lg border-t bg-background p-4">
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
             <div class="flex items-center justify-between">
-                <img
-                src="./img/sponsor3.jpg"
+              <img
+                src="./img/PATROCINADORES/3 - GOBERNACION DE ARAUCA.png"
                 alt="Sponsor Logo 3"
                 class="aspect-[2/1] h-16 object-contain"
-                />
-                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm 
+                font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2
+                focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
+                border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md 
+                px-3 ubicacion"
+              >
                 Ubicación
-                </button>
+              </button>
             </div>
             <div class="mt-4 border-b">
-                <h3 class="flex">
+              <h3 class="flex">
                 <button
-                    type="button"
-                    aria-controls="content3"
-                    aria-expanded="false"
-                    id="header3"
-                    class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline"
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium 
+                  transition-all hover:underline ubicacion"
                 >
-                    <span class="font-medium">Stark Industries</span>
-                    <svg
+                  <span class="font-medium">Gobernación de Arauca</span>
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -463,39 +699,2637 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
-                    >
+                  >
                     <path d="m6 9 6 6 6-6"></path>
-                    </svg>
+                  </svg>
                 </button>
-                </h3>
-                <div
+              </h3>
+              <div
                 id="content3"
                 hidden
                 role="region"
                 aria-labelledby="header3"
                 class="overflow-hidden text-sm transition-all"
-                ></div>
+              ></div>
             </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-            <!-- Sponsor Card End -->
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/4 - PAREX RESOURSE.png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Parex Resources</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/5 - PATRICIO JAIMES.png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Patricia Jaimes</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/6 - ING. CARLOS ZAMBRANO.png"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 
+                focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 
+                border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Ing. Carlos Zambrano</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/7 - FUNDACION MOTIVOS SOÑADOS POR ARAUCA.png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
+                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Fundación Motivos soñados por Arauca</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/8 - KALU TELECOMUNICACIONES .png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">KALU Telecomunicaciones</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/TRANSPORTE Y LOGISTICA .webp"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
+                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">RTT Transportes y logistica S.A.S</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/SOLDISMAN .png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Soldisman</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/MORENO Y CLAVIJO .png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
+                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Moreno y Clavijo</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/CONSTRUCTORA EBENEZER .png"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
+                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Constructura Ebenezer</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/PREFABRICADOS TAME .png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background
+                 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                 bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Prefabricados Tame</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/PA MI GENTE BAR .webp"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">P y G Pa' Mi Gente Bar</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/SANTA HELENA CONAGREGADOS .jpg"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Conagregados Santa Helena</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/CONSTRUCTORA Y SUMINISTROS MEDINA Y MADERO.jpg"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Constructura y Suministros Medina & Madero S.A.S</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/COOTRANSTAME .png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Cootranstame</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/CYM CONSTRUCTORA .jpg"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">C & M Constructora</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/ganaderos tame.png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Comité de Ganaderos Tame</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/LOGO JF NIT .png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Ingeniería Civil Juan Fernando Reuto</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/CARIBABARE.png"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Caribabare ESP</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/GENOVAS LLANERO EMPRENDEDOR.png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Genovas Llanero Emprendedor</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/cusol servicios y soluciones.jpg"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Cusol Servicios y Soluciones</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/jsr.png"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">JSR Building SAS. Ing Jhonnier Sandoval</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/fundacion de la orinaquia diversa.png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Fundación de la Orinaquia Biodiversa</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/LILI PINK.jpg"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Lili Pink</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/CONSTRUCTOR PABLO ROMERO IBICA .jpg"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Pablo Romer Ivica - Contador Publico</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/DIEGO GIL.jpg"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Ingeniero Diego Gil</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/LOGO PUBLICITARIO GEODE.png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Geode SAS</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/CASA DE LA CULTURA.png"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
+                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Casa de la Cultura de Tame</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/SUPER ALKOSTO .jpg"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Super Alkosto</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/EXPENDIDO DE CARNES LAS PULPITAS .jpg"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Carnes las pulpitas</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/TOLUA .jpg"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Tolua</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/SUPER GIROS.png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Super Giros</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/ELECTROMUEBLES.jpg"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Electromuebles</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/grimar del oriente.png"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Constructora Grimar del Oriente SAS</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/LH construcciones.png"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">LH Constructores</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/los caballos.png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Los Caballos</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/KEOPS .jpg"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Keops</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/jetxel-logo.jpg"
+                alt="Sponsor Logo 1"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content1"
+                  aria-expanded="false"
+                  id="header1"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Jetxcel SAS</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content1"
+                hidden
+                role="region"
+                aria-labelledby="header1"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Duplicate the above block for each sponsor -->
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/plus company.png"
+                alt="Sponsor Logo 2"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium 
+                ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 
+                focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
+                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content2"
+                  aria-expanded="false"
+                  id="header2"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Plus Company SAS</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content2"
+                hidden
+                role="region"
+                aria-labelledby="header2"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
+
+          <!-- Sponsor Card Start -->
+          <div class="rounded-lg border-t bg-background p-4">
+            <div class="flex items-center justify-between">
+              <img
+                src="./img/PATROCINADORES/cantera y operadores.png"
+                alt="Sponsor Logo 3"
+                class="aspect-[2/1] h-16 object-contain"
+              />
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
+                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
+                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
+                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+              >
+                Ubicación
+              </button>
+            </div>
+            <div class="mt-4 border-b">
+              <h3 class="flex">
+                <button
+                  type="button"
+                  aria-controls="content3"
+                  aria-expanded="false"
+                  id="header3"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
+                >
+                  <span class="font-medium">Cantera y Operadores</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="content3"
+                hidden
+                role="region"
+                aria-labelledby="header3"
+                class="overflow-hidden text-sm transition-all"
+              ></div>
+            </div>
+            <div class="h-0 w-[100%] mapSponsors">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.545581936825!2d-71.7525235259722!3d6.45233242398826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ef1ed60dbcd4f%3A0xf2d6fcd5d32dd5f9!2sTOLUA%20COCINA%20LOCAL!5e0!3m2!1ses!2sco!4v1722007002176!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Sponsor Card End -->
         </div>
-        </div>
+      </div>
     </section>
     <footer
       id="footer"
-      class="bg-white w-[100%] h-[100px] text-black flex justify-center"
+      class="bg-white w-[100%] h-[100px] text-black flex-col items-center justify-center"
     >
       <button
         id="mostrarMapa-btn"
-        class="w-[140px] h-full flex flex-col items-center justify-center"
+        class="w-[140px] h-full flex flex-col items-center justify-center mx-auto"
       >
-        <img id="mostrarMapa-img" src="./img/icon-arrow.svg" alt="flecha"  class="transition-all duration-500"/>
+        <img
+          id="mostrarMapa-img"
+          src="./img/icon-arrow.svg"
+          alt="flecha"
+          class="transition-all duration-500"
+        />
         <img src="./img/google_maps_logo.svg" alt="abrir mapa" />
       </button>
+      <div id="map" class="w-full h-0">
+        <iframe
+          class="w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.984076846213!2d-71.73933685666142!3d6.459171091787103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ec64f01bf76cb%3A0xec5810eae7b5dd3a!2sTame%2C%20Arauca!5e0!3m2!1ses!2sco!4v1722010417850!5m2!1ses!2sco"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </footer>
-    <div id="map" class="w-full h-0">
-        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.984076846213!2d-71.73933685666142!3d6.459171091787103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ec64f01bf76cb%3A0xec5810eae7b5dd3a!2sTame%2C%20Arauca!5e0!3m2!1ses!2sco!4v1722010417850!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <div></div>
     <script src="./index.js"></script>
   </body>
 </html>
