@@ -6,17 +6,19 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-black text-white">
-<!-- Hero section -->
+    <!-- Hero section -->
     <section
       id="hero"
       class="bg-gradientImg bg-cover h-screen w-screen bg-center md:bg-top relative"
     >
+      <!-- Share -->
       <ul class="w-screen flex items-center gap-2 flex-row-reverse pr-28 pt-5">
         <li><img src="./img/icon-share.svg" alt="compartir" /></li>
         <li class="border-2 border-[#EBB73F] p-2 rounded-full">
           <span>22.3k</span> visitas
         </li>
       </ul>
+      <!-- Logo Alcalde-->
       <img src="./img/logo_alacalde.jpg" alt="logo" class="m-auto mt-10" />
       <div class="flex w-[100%] justify-center items-center gap-3 mt-[50px]">
         <h1
@@ -27,10 +29,11 @@
         <img src="./img/palomita-azul.svg" alt="palomita-azul" class="pt-1" />
       </div>
       <p class="text-center mt-5 text-xl p-4">
-        Bienvenidos a Tame Arauca <br />
-        Ven y disfruta de las mejores fiestas que se realizarán en el municipio
-        de Tame, Arauca
+        ¡Bienvenidos a Tame Arauca! <br />
+        Únete a nosotros para disfrutar de las celebraciones más emocionantes
+        y vibrantes del municipio.
       </p>
+      <!-- Redes -->
       <ul
         id="contacto"
         class="w-[100%] flex justify-center items-center gap-3 mt-20"
@@ -52,105 +55,45 @@
           <a href="#"><img src="./img/icon-tel.svg" alt="icon-tel" /></a>
         </li>
       </ul>
+      <!-- Navegación -->
       <ul
         id="navegacion"
         class="w-[100%] flex justify-center items-center gap-3 mt-5 py-4 z-50"
       >
-        <li class="cursor-pointer">
-          <a id="hamburguesa" href="#hero"
+        <li class="cursor-pointer md:hidden">
+          <button id="hamburguesa"
             ><img
               src="./img/icon-nav.svg"
               alt="abrir barra de navegación"
               class="w-[40px] h-[40px]"
-          /></a>
+          /></button>
         </li>
-        <li>
+        <li class="hidden md:block">
           <a
             href="#cronograma"
+            class="text-[#ffe5e5] font-semibold p-2 rounded-md bg-[#EBB73F]"
+            >Cronograma</a
+          >
+        </li>
+        <li class="hidden md:block">
+          <a
+            href="#historia"
             class="text-[#EBB73F] border-2 border-[#EBB73F] p-2 rounded-full"
-            >CRONOGRAMA</a
+            >Nuestra historia</a
+          >
+        </li>
+        <li class="hidden md:block">
+          <a
+            href="#patrocinadores"
+            class="text-[#EBB73F] border-2 border-[#EBB73F] p-2 rounded-full"
+            >Patrocinadores</a
           >
         </li>
       </ul>
-
-      <form class="hidden items-center max-w-lg mx-auto">
-        <label for="voice-search" class="sr-only">Search</label>
-        <button id="volver-btn">
-          <img src="./img/icon-arrow-left.svg" alt="volver" />
-        </button>
-        <div class="relative w-full">
-          <div
-            class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
-          >
-            <svg
-              class="w-4 h-4 text-gray-500 dark:text-gray-400"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 21 21"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M11.15 5.6h.01m3.337 1.913h.01m-6.979 0h.01M5.541 11h.01M15 15h2.706a1.957 1.957 0 0 0 1.883-1.325A9 9 0 1 0 2.043 11.89 9.1 9.1 0 0 0 7.2 19.1a8.62 8.62 0 0 0 3.769.9A2.013 2.013 0 0 0 13 18v-.857A2.034 2.034 0 0 1 15 15Z"
-              />
-            </svg>
-          </div>
-          <input
-            type="text"
-            id="voice-search"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Buscar en cronograma ..."
-            required
-          />
-          <button
-            type="button"
-            class="absolute inset-y-0 end-0 flex items-center pe-3"
-          >
-            <svg
-              class="w-4 h-4 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 16 20"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z"
-              />
-            </svg>
-          </button>
-        </div>
-        <button
-          type="submit"
-          class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-[#EBB73F] rounded-lg border border-blue-300 hover:bg-[#7a6021] focus:ring-4 focus:outline-none focus:ring-blue-300"
-        >
-          <svg
-            class="w-4 h-4 me-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 20 20"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-            /></svg
-          >Buscar
-        </button>
-      </form>
-
+      <!--Barra lateral-->
       <div
         id="barraNavegacion"
-        class="h-full w-[220px] absolute bg-black top-0 translate-x-[-220px]"
+        class="h-full w-[220px] absolute bg-black translate-x-[-220px] z-[100]"
       >
         <p
           class="p-5 mt-5 text-2xl text-center font-bold border-b-2 border-white"
@@ -160,542 +103,981 @@
         <ul class="font-semibold p-5 mt-2 ml-4 text-left">
           <li class="mb-6">
             <a href="#cronograma" class="border-b-2 border-[#EBB73F]"
-              >CRONOGRAMA</a
+              >Cronograma</a
             >
           </li>
-          <li>
+          <li class="mb-6">
             <a href="#patrocinadores" class="border-b-2 border-[#EBB73F]"
-              >PATROCINADORES</a
+              >Nuestra historia</a
+            >
+          </li>
+          <li class="mb-6">
+            <a href="#patrocinadores" class="border-b-2 border-[#EBB73F]"
+              >Patrocinadores</a
             >
           </li>
         </ul>
       </div>
     </section>
 
-<!-- Cronograma -->
+    <!-- Cronograma -->
     <section id="cronograma">
-  <div class="bg-neutral-900 text-neutral-200 p-6 sm:p-10">
-    <div class="space-y-8">
-      <div class="text-center">
-        <h1 class="text-2xl font-bold">FIESTAS PATRONALES</h1>
-        <p class="text-lg">15 al 19 de agosto 2024</p>
-      </div>
-      <div class="flex flex-col items-center">
-        <div class="relative w-full max-w-2xl pl-6 after:absolute after:inset-y-0 after:w-px after:bg-neutral-500">
-          <div class="grid gap-6 text-sm relative">
-            <!-- Día Jueves 15 -->
-            <div class="flex items-start gap-4">
-              <div class="aspect-square w-3 bg-primary rounded-full"></div>
-              <div>
-                <div class="font-medium">Jueves 15</div>
-                <div class="space-y-4">
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      2:00 pm
+      <div class="bg-neutral-900 text-neutral-200 p-6 sm:p-10">
+        <div class="space-y-8">
+          <div class="text-center">
+            <h1 class="text-2xl font-bold">FIESTAS PATRONALES</h1>
+            <p class="text-lg">15 al 19 de agosto 2024</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="relative w-full max-w-2xl pl-6 after:absolute after:inset-y-0 after:w-px after:bg-neutral-500"
+            >
+              <div class="grid gap-6 text-sm relative">
+                <!-- Día Jueves 15 -->
+                <div class="flex items-start gap-4">
+                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
+                  <div>
+                    <div class="font-medium">Jueves 15</div>
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          2:00 pm
+                        </div>
+                        <p>
+                          Recibimiento de candidatas aspirantes al XLVI reinado
+                          internacional del llano.
+                        </p>
+                        <a
+                          href="./hotelTameRealMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          5:00 pm
+                        </div>
+                        <p>
+                          Eucaristía, iglesia Nuestra Señora de la Asunción.
+                        </p>
+                        <a
+                          href="./iglesiaNuestraSeñoraAsuMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          6:00 pm
+                        </div>
+                        <p>
+                          Procesión y serenata a la virgen de nuestra señora de
+                          la asunción de Tame.
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          7:30 pm
+                        </div>
+                        <p>
+                          Rueda de prensa y entrega de llaves de la ciudad a las
+                          candidatas al XLVI reinado internacional del llano
+                        </p>
+                        <a
+                          href="./generalSantanderMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
                     </div>
-                    <p>Recibimiento de candidatas aspirantes al XLVI reinado internacional del llano.</p>
-                    <a href="./hotelTameRealMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      5:00 pm
-                    </div>
-                    <p>Eucaristía, iglesia Nuestra Señora de la Asunción.</p>
-                    <a href="./iglesiaNuestraSeñoraAsuMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      6:00 pm
-                    </div>
-                    <p>Procesión y serenata a la virgen de nuestra señora de la asunción de Tame.</p>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      7:30 pm
-                    </div>
-                    <p>Rueda de prensa y entrega de llaves de la ciudad a las candidatas al XLVI reinado internacional del llano</p>
-                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Día Viernes 16 -->
-            <div class="flex items-start gap-4">
-              <div class="aspect-square w-3 bg-primary rounded-full"></div>
-              <div>
-                <div class="font-medium">Viernes 16</div>
-                <div class="space-y-4">
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      4:00 am
-                    </div>
-                    <p>Alborada con banda papayera.</p>
-                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      7:30 am
-                    </div>
-                    <p>Desfile de colonias y cabalgata.</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:00 am
-                    </div>
-                    <p>Exposición artesanal y de comidas de la cocina colombiana.</p>
-                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      2:00 pm
-                    </div>
-                    <p>Coleo de entrenamiento. Organiza: club de coleo Juan la Garza.</p>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      4:00 pm
-                    </div>
-                    <p>Inicio del XVIII festival internacional de música llanera GIRARA DE ORO.</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      9:00 pm
-                    </div>
-                    <p>Presentación e imposición de bandas a las candidatas aspirantes al XLVI reinado internacional del llano.</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      9:30 pm
-                    </div>
-                    <p>Presentación grupo de danza Cunaguaro.</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:00 pm
-                    </div>
-                    <p>Invitado especial: Miguel trujillo</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:00 pm
-                    </div>
-                    <p>Baile popular: Noche de talento juvenil, DJ Memo Junior, grupo Estación Vallenata</p>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:30 pm
-                    </div>
-                    <p>Continuación del festival internacional Girara de Oro</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      1:00 am
-                    </div>
-                    <p>Invitado especial: Dixon Soto</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Día Sábado 17 -->
-            <div class="flex items-start gap-4">
-              <div class="aspect-square w-3 bg-primary rounded-full"></div>
-              <div>
-                <div class="font-medium">Sábado 17</div>
-                <div class="space-y-4">
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      4:00 am
+                <!-- Día Viernes 16 -->
+                <div class="flex items-start gap-4">
+                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
+                  <div>
+                    <div class="font-medium">Viernes 16</div>
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          4:00 am
+                        </div>
+                        <p>Alborada con banda papayera.</p>
+                        <a
+                          href="./generalSantanderMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          7:30 am
+                        </div>
+                        <p>Desfile de colonias y cabalgata.</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:00 am
+                        </div>
+                        <p>
+                          Exposición artesanal y de comidas de la cocina
+                          colombiana.
+                        </p>
+                        <a
+                          href="./generalSantanderMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          2:00 pm
+                        </div>
+                        <p>
+                          Coleo de entrenamiento. Organiza: club de coleo Juan
+                          la Garza.
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          4:00 pm
+                        </div>
+                        <p>
+                          Inicio del XVIII festival internacional de música
+                          llanera GIRARA DE ORO.
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          9:00 pm
+                        </div>
+                        <p>
+                          Presentación e imposición de bandas a las candidatas
+                          aspirantes al XLVI reinado internacional del llano.
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          9:30 pm
+                        </div>
+                        <p>Presentación grupo de danza Cunaguaro.</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:00 pm
+                        </div>
+                        <p>Invitado especial: Miguel trujillo</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:00 pm
+                        </div>
+                        <p>
+                          Baile popular: Noche de talento juvenil, DJ Memo
+                          Junior, grupo Estación Vallenata
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:30 pm
+                        </div>
+                        <p>
+                          Continuación del festival internacional Girara de Oro
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          1:00 am
+                        </div>
+                        <p>Invitado especial: Dixon Soto</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
                     </div>
-                    <p>Alborada con Papayera</p>
-                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      5:00 am
-                    </div>
-                    <p>Concurso de la modalidad de conocimiento criollo</p>
-                    <a href="./casaCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      7:30 am
-                    </div>
-                    <p>Joropera "Zapateando en la tierra de Miguel Ángel Martin".</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      8:00 am
-                    </div>
-                    <p>Privado con participantes al festival Girara de Oro</p>
-                    <a href="./casaCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:00 am
-                    </div>
-                    <p>Exposición artesanal y gastronomía</p>
-                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      2:00 pm
-                    </div>
-                    <p>Concurso de la modalidad de conocimiento Criollo</p>
-                    <a href="./casaCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      2:00 pm
-                    </div>
-                    <p>Inicio de la XXIX versión de coleo la Garza de Oro. Coleo internacional de espectáculo femenino la Garza de Oro. Organiza: club de coleo Juan la Garza</p>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      6:00 pm
-                    </div>
-                    <p>Final del XXVIII festival internacional de música llanera Girara de Oro</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      8:30 pm
-                    </div>
-                    <p>Invitado especial: Armando Reyes</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      9:00 pm
-                    </div>
-                    <p>Presentación artística de las candidatas aspirantes al XLVI Reinado Internacional del Llano</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:00 pm
-                    </div>
-                    <p>Baile popular, festival de orquestas Tame 2024: Zafra Orquesta, Maquinaria Campesina, Tropicolombia, Los del Meke. Lugar: Club de coleo Juan la Garza.</p>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      11:30 pm
-                    </div>
-                    <p>Premiación del XVIII Festival Internacional de música llanera Girara de Oro</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      12:00 am
-                    </div>
-                    <p>Presentación especial de el Cholo Valderrama, Yesid Ortiz, Daniel Gualdrón y Walter Silva.</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Día Domingo 18 -->
-            <div class="flex items-start gap-4">
-              <div class="aspect-square w-3 bg-primary rounded-full"></div>
-              <div>
-                <div class="font-medium">Domingo 18</div>
-                <div class="space-y-4">
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:00 am
-                    </div>
-                    <p>Exposición artesanal y gastronomía</p>
-                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      11:00 am
-                    </div>
-                    <p>Presentación de candidatas al XLVI Reinado Internacional del Llano, en traje de baño. Lugar: Complejo deportivo Villa Olímpica.</p>
-                    <a href="./villaOlimpicaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      11:30 am
-                    </div>
-                    <p>Invitados especiales: Amanda Betancourt, Eparquio Pérez y Karen Tovar</p>
-                    <a href="./generalSantanderMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      2:00 pm
-                    </div>
-                    <p>Final de la XXIX versión de coleo la Garza de Oro. Final de coleo femenino la Garza de Oro. Lugar: Manga de coleo los Tautacos.</p>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      8:00 pm
-                    </div>
-                    <p>Invitados especiales: Grupo musical CARPEDIEM</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      8:30 pm
-                    </div>
-                    <p>Invitado especial: Edwin Ergeua</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      9:00 pm
-                    </div>
-                    <p>Presentación de candidatas aspirantes al XLVI Reinado Internacional del Llano</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      9:30 pm
-                    </div>
-                    <p>Invitada especial: Victoria Rodríguez</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      10:00 pm
-                    </div>
-                    <p>Presentación especial de Joseito Oviedo</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      11:00 pm
-                    </div>
-                    <p>Acto de premiación y coronación del XLVI Reinado Internacional del Llano</p>
-                    <a href="./forumCulturaMap.html" class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">Ubicación</a>
-                  </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      11:00 pm
-                    </div>
-                    <p>Baile de coronación, noche de super conciertos: Grupo Dinastia, Karen Lizarazo, Shows pirotecnicos, los rayos de Mexico. Lugar: Club de coleo Juan la Garza. </p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Día Lunes 19 -->
-            <div class="flex items-start gap-4">
-              <div class="aspect-square w-3 bg-primary rounded-full"></div>
-              <div>
-                <div class="font-medium">Lunes 19</div>
-                <div class="space-y-4">
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      2:00 pm
+                <!-- Día Sábado 17 -->
+                <div class="flex items-start gap-4">
+                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
+                  <div>
+                    <div class="font-medium">Sábado 17</div>
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          4:00 am
+                        </div>
+                        <p>Alborada con Papayera</p>
+                        <a
+                          href="./generalSantanderMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          5:00 am
+                        </div>
+                        <p>Concurso de la modalidad de conocimiento criollo</p>
+                        <a
+                          href="./casaCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          7:30 am
+                        </div>
+                        <p>
+                          Joropera "Zapateando en la tierra de Miguel Ángel
+                          Martin".
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          8:00 am
+                        </div>
+                        <p>
+                          Privado con participantes al festival Girara de Oro
+                        </p>
+                        <a
+                          href="./casaCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:00 am
+                        </div>
+                        <p>Exposición artesanal y gastronomía</p>
+                        <a
+                          href="./generalSantanderMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          2:00 pm
+                        </div>
+                        <p>Concurso de la modalidad de conocimiento Criollo</p>
+                        <a
+                          href="./casaCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          2:00 pm
+                        </div>
+                        <p>
+                          Inicio de la XXIX versión de coleo la Garza de Oro.
+                          Coleo internacional de espectáculo femenino la Garza
+                          de Oro. Organiza: club de coleo Juan la Garza
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          6:00 pm
+                        </div>
+                        <p>
+                          Final del XXVIII festival internacional de música
+                          llanera Girara de Oro
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          8:30 pm
+                        </div>
+                        <p>Invitado especial: Armando Reyes</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          9:00 pm
+                        </div>
+                        <p>
+                          Presentación artística de las candidatas aspirantes al
+                          XLVI Reinado Internacional del Llano
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:00 pm
+                        </div>
+                        <p>
+                          Baile popular, festival de orquestas Tame 2024: Zafra
+                          Orquesta, Maquinaria Campesina, Tropicolombia, Los del
+                          Meke. Lugar: Club de coleo Juan la Garza.
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          11:30 pm
+                        </div>
+                        <p>
+                          Premiación del XVIII Festival Internacional de música
+                          llanera Girara de Oro
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          12:00 am
+                        </div>
+                        <p>
+                          Presentación especial de el Cholo Valderrama, Yesid
+                          Ortiz, Daniel Gualdrón y Walter Silva.
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
                     </div>
-                    <p>Coleo sub-21. Lugar: Manga de coleo los Tautacos.</p>
                   </div>
-                  <div class="flex items-center gap-4">
-                    <div class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500">
-                      3:00 pm
+                </div>
+                <!-- Día Domingo 18 -->
+                <div class="flex items-start gap-4">
+                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
+                  <div>
+                    <div class="font-medium">Domingo 18</div>
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:00 am
+                        </div>
+                        <p>Exposición artesanal y gastronomía</p>
+                        <a
+                          href="./generalSantanderMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          11:00 am
+                        </div>
+                        <p>
+                          Presentación de candidatas al XLVI Reinado
+                          Internacional del Llano, en traje de baño. Lugar:
+                          Complejo deportivo Villa Olímpica.
+                        </p>
+                        <a
+                          href="./villaOlimpicaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          11:30 am
+                        </div>
+                        <p>
+                          Invitados especiales: Amanda Betancourt, Eparquio
+                          Pérez y Karen Tovar
+                        </p>
+                        <a
+                          href="./generalSantanderMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          2:00 pm
+                        </div>
+                        <p>
+                          Final de la XXIX versión de coleo la Garza de Oro.
+                          Final de coleo femenino la Garza de Oro. Lugar: Manga
+                          de coleo los Tautacos.
+                        </p>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          8:00 pm
+                        </div>
+                        <p>Invitados especiales: Grupo musical CARPEDIEM</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          8:30 pm
+                        </div>
+                        <p>Invitado especial: Edwin Ergeua</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          9:00 pm
+                        </div>
+                        <p>
+                          Presentación de candidatas aspirantes al XLVI Reinado
+                          Internacional del Llano
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          9:30 pm
+                        </div>
+                        <p>Invitada especial: Victoria Rodríguez</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          10:00 pm
+                        </div>
+                        <p>Presentación especial de Joseito Oviedo</p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          11:00 pm
+                        </div>
+                        <p>
+                          Acto de premiación y coronación del XLVI Reinado
+                          Internacional del Llano
+                        </p>
+                        <a
+                          href="./forumCulturaMap.html"
+                          class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                          >Ubicación</a
+                        >
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          11:00 pm
+                        </div>
+                        <p>
+                          Baile de coronación, noche de super conciertos: Grupo
+                          Dinastia, Karen Lizarazo, Shows pirotecnicos, los
+                          rayos de Mexico. Lugar: Club de coleo Juan la Garza.
+                        </p>
+                      </div>
                     </div>
-                    <p>Tarde de humor: Invitados especiales: Alerta y Piroberta. Lugar: Manga de coleo Juan la Garza.</p>
+                  </div>
+                </div>
+                <!-- Día Lunes 19 -->
+                <div class="flex items-start gap-4">
+                  <div class="aspect-square w-3 bg-primary rounded-full"></div>
+                  <div>
+                    <div class="font-medium">Lunes 19</div>
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          2:00 pm
+                        </div>
+                        <p>Coleo sub-21. Lugar: Manga de coleo los Tautacos.</p>
+                      </div>
+                      <div class="flex items-center gap-4">
+                        <div
+                          class="px-2 py-1 bg-primary text-primary-foreground rounded-md font-medium border border-neutral-500"
+                        >
+                          3:00 pm
+                        </div>
+                        <p>
+                          Tarde de humor: Invitados especiales: Alerta y
+                          Piroberta. Lugar: Manga de coleo Juan la Garza.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>  
-    </div>
-  </div>
+      </div>
     </section>
 
-<!-- Timeline -->
-<section class="bg-[#1a1a1a] py-12 md:py-20">
-  <div class="container mx-auto px-4 md:px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <!-- Título de la sección -->
-      <h2 class="text-3xl font-bold tracking-tight md:text-4xl text-white">Historia de Tame, Arauca, Colombia</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Tame_%28Arauca%29.svg" alt="Escudo de Tame" class="w-16 h-16 mx-auto" />
-      <p class="mt-4 text-white md:text-lg">Explora la rica historia de este vibrante pueblo colombiano.</p>
-    </div>
-    <div class="mt-12 md:mt-16 relative pl-6 md:pl-10 border-l border-muted-foreground/20">
-      <div class="space-y-8">
-        <!-- Primer evento histórico -->
-        <div class="relative flex flex-col items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Fundación y Asentamientos Indígenas</h3>
-            <div class="text-sm text-white">Época del descubrimiento</div>
-            <p class="mt-2 text-white">Tame fue hábitat de grupos indígenas arauquinoides de las familias guahibo
-               y arawak. Estos grupos establecieron asentamientos sedentarios como Horouchoebía, Coroní, Saborosama, 
-               Ischtaburabi, Cobariba, Macaguane, Betoyes y Patute, que fueron sometidos por los españoles.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-1.webp" width="300" height="200" style="aspect-ratio: 300 / 200; object-fit: cover;" alt="Tame, Arauca" class="rounded-lg" />
-            </div>
-          </div>
+    <!-- Timeline -->
+    <section id="historia" class="bg-[#1a1a1a] py-12 md:py-20">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <!-- Título de la sección -->
+          <h2 class="text-3xl font-bold tracking-tight md:text-4xl text-white">
+            Historia de Tame, Arauca, Colombia
+          </h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Tame_%28Arauca%29.svg"
+            alt="Escudo de Tame"
+            class="w-12 h-1/2 mx-auto"
+          />
+          <p class="mt-4 text-white md:text-lg">
+            Explora la rica historia de este vibrante pueblo colombiano.
+          </p>
         </div>
-        <!-- Segundo evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Primera Fundación de Tame</h3>
-            <div class="text-sm text-white">1628</div>
-            <p class="mt-2 text-white">Alonso Pérez de Guzmán fundó y organizó la población de Tame, 
-              basándose en un caserío de indios Giraras. Cerca de este caserío y del río Tame, 
-              su hermano Andrés fundó “Espinosa de las Palmas” para albergar civiles españoles.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-2.webp" alt="Centro del Pueblo de Tame" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+        <div
+          class="mt-12 md:mt-16 relative pl-6 md:pl-10 border-l border-muted-foreground/20"
+        >
+          <div class="space-y-8">
+            <!-- Primer evento histórico -->
+            <div class="relative flex flex-col items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Fundación y Asentamientos Indígenas
+                </h3>
+                <div class="text-sm text-white">Época del descubrimiento</div>
+                <p class="mt-2 text-white">
+                  Tame fue hábitat de grupos indígenas arauquinoides de las
+                  familias guahibo y arawak. Estos grupos establecieron
+                  asentamientos sedentarios como Horouchoebía, Coroní,
+                  Saborosama, Ischtaburabi, Cobariba, Macaguane, Betoyes y
+                  Patute, que fueron sometidos por los españoles.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-1.webp"
+                    width="300"
+                    height="200"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                    alt="Tame, Arauca"
+                    class="rounded-lg"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Tercer evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Destrucción de Espinosa de las Palmas</h3>
-            <div class="text-sm text-white">Posterior a 1628</div>
-            <p class="mt-2 text-white">El poblado de “Espinosa de las Palmas” fue destruido y Pérez de Guzmán, junto con sus soldados,
-               fue asesinado por los indios Giraras en venganza por las actividades esclavistas de los españoles.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-3.webp" alt="Expansión Agrícola" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+            <!-- Segundo evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Primera Fundación de Tame
+                </h3>
+                <div class="text-sm text-white">1628</div>
+                <p class="mt-2 text-white">
+                  Alonso Pérez de Guzmán fundó y organizó la población de Tame,
+                  basándose en un caserío de indios Giraras. Cerca de este
+                  caserío y del río Tame, su hermano Andrés fundó “Espinosa de
+                  las Palmas” para albergar civiles españoles.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-2.webp"
+                    alt="Centro del Pueblo de Tame"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Cuarto evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Inclusión en la Comisaría de Arauca</h3>
-            <div class="text-sm text-white">1925</div>
-            <p class="mt-2 text-white">Los municipios de Tame y San Lope se incorporaron a la jurisdicción de la Comisaría Especial de Arauca,
-               ampliando significativamente la extensión territorial de Arauca.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-4.webp" alt="Modernización" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+            <!-- Tercer evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Destrucción de Espinosa de las Palmas
+                </h3>
+                <div class="text-sm text-white">Posterior a 1628</div>
+                <p class="mt-2 text-white">
+                  El poblado de “Espinosa de las Palmas” fue destruido y Pérez
+                  de Guzmán, junto con sus soldados, fue asesinado por los
+                  indios Giraras en venganza por las actividades esclavistas de
+                  los españoles.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-3.webp"
+                    alt="Expansión Agrícola"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Quinto evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Desarrollo Agroindustrial en la Colonia</h3>
-            <div class="text-sm text-white">Siglo XVII-XVIII</div>
-            <p class="mt-2 text-white">Durante la colonia, se organizó un complejo agroindustrial en un latifundio de 220 mil hectáreas 
-              propiedad de la Compañía de Jesús en los Llanos del Orinoco. 
-              Se exportaban productos como café, cacao, tabaco, sarrapia, pieles y plumas de garza a Europa y América del Norte.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-5.webp" alt="Modernización" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+            <!-- Cuarto evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Inclusión en la Comisaría de Arauca
+                </h3>
+                <div class="text-sm text-white">1925</div>
+                <p class="mt-2 text-white">
+                  Los municipios de Tame y San Lope se incorporaron a la
+                  jurisdicción de la Comisaría Especial de Arauca, ampliando
+                  significativamente la extensión territorial de Arauca.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-4.webp"
+                    alt="Modernización"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Sexto evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Redistribución de Mercancías</h3>
-            <div class="text-sm text-white">Siglo XVIII</div>
-            <p class="mt-2 text-white">La redistribución de mercancías desde el Casanare hasta el Puerto de San Salvador
-               o desde el Arauca hasta Arauquita se realizaba con mulas y bueyes. 
-               Destacados comerciantes como Abelardo Bravo y Florentino Cruz poseían grandes bodegas y almacenes
-               que surtían expendios menores.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-6.webp" alt="Modernización" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+            <!-- Quinto evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Desarrollo Agroindustrial en la Colonia
+                </h3>
+                <div class="text-sm text-white">Siglo XVII-XVIII</div>
+                <p class="mt-2 text-white">
+                  Durante la colonia, se organizó un complejo agroindustrial en
+                  un latifundio de 220 mil hectáreas propiedad de la Compañía de
+                  Jesús en los Llanos del Orinoco. Se exportaban productos como
+                  café, cacao, tabaco, sarrapia, pieles y plumas de garza a
+                  Europa y América del Norte.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-5.webp"
+                    alt="Modernización"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Septimo evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Inicio de la Emancipación</h3>
-            <div class="text-sm text-white">1812</div>
-            <p class="mt-2 text-white">Tame participó en la emancipación de Colombia cuando fray Ignacio Mariño, 
-              junto con Juan Galea y Ramón Nonato Pérez, organizó un ejército para rechazar la reconquista española, 
-              manteniendo libres los territorios de Arauca y Casanare.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-7.webp" alt="Emancipacion" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+            <!-- Sexto evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Redistribución de Mercancías
+                </h3>
+                <div class="text-sm text-white">Siglo XVIII</div>
+                <p class="mt-2 text-white">
+                  La redistribución de mercancías desde el Casanare hasta el
+                  Puerto de San Salvador o desde el Arauca hasta Arauquita se
+                  realizaba con mulas y bueyes. Destacados comerciantes como
+                  Abelardo Bravo y Florentino Cruz poseían grandes bodegas y
+                  almacenes que surtían expendios menores.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-6.webp"
+                    alt="Modernización"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Octavo evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Encuentro de Bolívar y Santander</h3>
-            <div class="text-sm text-white">12 de junio de 1819</div>
-            <p class="mt-2 text-white">Simón Bolívar y Francisco de Paula Santander se encontraron en Tame, 
-              donde Bolívar le dio el título de “CUNA DE LA LIBERTAD” debido a la organización del Ejército Nacional de Colombia,
-              que culminó con la victoria en Boyacá.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-8.webp" alt="Modernización" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+            <!-- Septimo evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Inicio de la Emancipación
+                </h3>
+                <div class="text-sm text-white">1812</div>
+                <p class="mt-2 text-white">
+                  Tame participó en la emancipación de Colombia cuando fray
+                  Ignacio Mariño, junto con Juan Galea y Ramón Nonato Pérez,
+                  organizó un ejército para rechazar la reconquista española,
+                  manteniendo libres los territorios de Arauca y Casanare.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-7.webp"
+                    alt="Emancipacion"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Noveno evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Participación en la Gesta Libertadora</h3>
-            <div class="text-sm text-white">1819</div>
-            <p class="mt-2 text-white">Tameños participaron significativamente en la gesta libertadora. 
-              Cuatro de los 14 lanceros que definieron la suerte de la Nueva Granada en el Pantano de Vargas eran de Tame:
-              Pablo Matute, Bonifacio y Saturnino Gutiérrez, y José Inocencio Chinca.</p>
-            <div class="mt-4">
-              <img src="./img/ilustraciones/evento-9.webp" alt="Modernización" width="300" height="200" class="rounded-lg" style="aspect-ratio: 300 / 200; object-fit: cover;" />
+            <!-- Octavo evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Encuentro de Bolívar y Santander
+                </h3>
+                <div class="text-sm text-white">12 de junio de 1819</div>
+                <p class="mt-2 text-white">
+                  Simón Bolívar y Francisco de Paula Santander se encontraron en
+                  Tame, donde Bolívar le dio el título de “CUNA DE LA LIBERTAD”
+                  debido a la organización del Ejército Nacional de Colombia,
+                  que culminó con la victoria en Boyacá.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-8.webp"
+                    alt="Modernización"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Decimo evento histórico -->
-        <div class="relative flex items-start gap-4">
-          <!-- Viñeta -->
-          <div class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-            <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-white">Preservación Cultural y Turismo</h3>
-            <div class="text-sm text-white">Últimas Décadas</div>
-            <p class="mt-2 text-white">En las últimas décadas, Tame se ha enfocado en preservar su cultura y fomentar el turismo.</p>
+            <!-- Noveno evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Participación en la Gesta Libertadora
+                </h3>
+                <div class="text-sm text-white">1819</div>
+                <p class="mt-2 text-white">
+                  Tameños participaron significativamente en la gesta
+                  libertadora. Cuatro de los 14 lanceros que definieron la
+                  suerte de la Nueva Granada en el Pantano de Vargas eran de
+                  Tame: Pablo Matute, Bonifacio y Saturnino Gutiérrez, y José
+                  Inocencio Chinca.
+                </p>
+                <div class="mt-4">
+                  <img
+                    src="./img/ilustraciones/evento-9.webp"
+                    alt="Modernización"
+                    width="300"
+                    height="200"
+                    class="rounded-lg"
+                    style="aspect-ratio: 300 / 200; object-fit: cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Decimo evento histórico -->
+            <div class="relative flex items-start gap-4">
+              <!-- Viñeta -->
+              <div
+                class="absolute -left-[13px] md:-left-[17px] top-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center"
+              >
+                <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold text-white">
+                  Preservación Cultural y Turismo
+                </h3>
+                <div class="text-sm text-white">Últimas Décadas</div>
+                <p class="mt-2 text-white">
+                  En las últimas décadas, Tame se ha enfocado en preservar su
+                  cultura y fomentar el turismo.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-
-<!-- Patrocinadores -->
+    <!-- Patrocinadores -->
     <section id="patrocinadores" class="w-full py-12 md:py-24 lg:py-32">
       <div class="container mx-auto max-w-6xl px-4 text-center lg:text-left">
         <div class="mb-8">
@@ -721,11 +1103,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm 
-                font-medium ring-offset-background transition-colors focus-visible:outline-none 
-                focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
-                disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -737,8 +1115,7 @@
                   aria-controls="content1"
                   aria-expanded="false"
                   id="header1"
-                  class="flex flex-1 items-center justify-between py-4 font-medium
-                   transition-all hover:underline ubicacion"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
                   <span class="font-medium">Alcaldia municipal de Tame</span>
                   <svg
@@ -853,11 +1230,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm 
-                font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2
-                focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
-                border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md 
-                px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -869,8 +1242,7 @@
                   aria-controls="content3"
                   aria-expanded="false"
                   id="header3"
-                  class="flex flex-1 items-center justify-between py-4 font-medium 
-                  transition-all hover:underline ubicacion"
+                  class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
                   <span class="font-medium">Gobernación de Arauca</span>
                   <svg
@@ -920,10 +1292,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -987,10 +1356,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1053,10 +1419,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 
-                focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 
-                border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1118,10 +1481,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
-                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1135,7 +1495,9 @@
                   id="header1"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">Fundación Motivos soñados por Arauca</span>
+                  <span class="font-medium"
+                    >Fundación Motivos soñados por Arauca</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -1185,10 +1547,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1251,10 +1610,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
-                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1268,7 +1624,9 @@
                   id="header3"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">RTT Transportes y logistica S.A.S</span>
+                  <span class="font-medium"
+                    >RTT Transportes y logistica S.A.S</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -1316,10 +1674,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1383,10 +1738,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
-                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1449,10 +1801,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
-                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1514,10 +1863,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background
-                 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                 bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1581,10 +1927,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1647,10 +1990,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1726,7 +2066,9 @@
                   id="header1"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">Constructura y Suministros Medina & Madero S.A.S</span>
+                  <span class="font-medium"
+                    >Constructura y Suministros Medina & Madero S.A.S</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -1776,10 +2118,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1842,10 +2181,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1907,10 +2243,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1974,10 +2307,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -1991,7 +2321,9 @@
                   id="header2"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">Ingeniería Civil Juan Fernando Reuto</span>
+                  <span class="font-medium"
+                    >Ingeniería Civil Juan Fernando Reuto</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -2040,10 +2372,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2105,10 +2434,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2172,10 +2498,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2238,10 +2561,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2255,7 +2575,9 @@
                   id="header3"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">JSR Building SAS. Ing Jhonnier Sandoval</span>
+                  <span class="font-medium"
+                    >JSR Building SAS. Ing Jhonnier Sandoval</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -2303,10 +2625,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2320,7 +2639,9 @@
                   id="header1"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">Fundación de la Orinaquia Biodiversa</span>
+                  <span class="font-medium"
+                    >Fundación de la Orinaquia Biodiversa</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -2370,10 +2691,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2436,10 +2754,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2453,7 +2768,9 @@
                   id="header3"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">Pablo Romer Ivica - Contador Publico</span>
+                  <span class="font-medium"
+                    >Pablo Romer Ivica - Contador Publico</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -2501,10 +2818,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2568,10 +2882,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2634,10 +2945,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
-                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2699,10 +3007,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2766,10 +3071,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2832,10 +3134,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2897,10 +3196,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -2964,10 +3260,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3030,10 +3323,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3047,7 +3337,9 @@
                   id="header3"
                   class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline ubicacion"
                 >
-                  <span class="font-medium">Constructora Grimar del Oriente SAS</span>
+                  <span class="font-medium"
+                    >Constructora Grimar del Oriente SAS</span
+                  >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -3095,10 +3387,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3162,10 +3451,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3228,10 +3514,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3293,10 +3576,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3360,10 +3640,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium 
-                ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 
-                focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border 
-                border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3426,10 +3703,7 @@
                 class="aspect-[2/1] h-16 object-contain"
               />
               <button
-                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background 
-                transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring 
-                focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input 
-                bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 ubicacion"
               >
                 Ubicación
               </button>
@@ -3485,7 +3759,7 @@
         </div>
       </div>
     </section>
-  
+
     <footer
       id="footer"
       class="bg-white w-[100%] h-[100px] text-black flex-col items-center justify-center"

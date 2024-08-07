@@ -1,6 +1,7 @@
 // Variables de estado
 let respNav = true;
 let respMap = true;
+let scrollVertical = 0;
 
 // Elementos del DOM
 const barraNavegacion = document.getElementById("barraNavegacion");
@@ -60,10 +61,12 @@ hamburguesa.addEventListener("click", () => {
   mostrarNav();
   navegacion.classList.toggle("hidden");
   respNav = !respNav;
+  barraNavegacion.style.top = "0";
 });
 
 // Ocultar barra de navegación al hacer clic fuera de la misma
 document.addEventListener("click", (e) => {
+  barraNavegacion.style.top = `${scrollVertical}px`;
   if (!respNav && !e.target.closest("#hamburguesa")) {
     ocultarBarraNavegacion();
     navegacion.classList.toggle("hidden");
@@ -72,8 +75,11 @@ document.addEventListener("click", (e) => {
 });
 
 // Fijar la barra de navegación al hacer scroll
+
 window.addEventListener("scroll", () => {
   const scrollPosicion = window.scrollY;
+  scrollVertical  = scrollPosicion;
+  barraNavegacion.style.top = `${scrollVertical}px`;
   if (scrollPosicion > 640) {
     navegacion.classList.add("fixed", "top-0", "bg-black");
     navegacion.classList.remove("mt-5");
