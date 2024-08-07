@@ -106,3 +106,8 @@ Array.from(ubicacionesBtn).forEach((ubicacion, index) => {
     }
   });
 });
+
+// callback contador de visitas
+function contadorVisitas(response) {
+  document.getElementById("visitas").innerText = response.value;
+}
