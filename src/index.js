@@ -121,8 +121,10 @@ jetxcel.addEventListener("click", () => {
 
 const terminos = document.getElementById("terminos");
 terminos.addEventListener("click", () => {
-  alert(`
-Aviso General de Derechos de Autor
-
-Todos los contenidos de esta página web, incluyendo pero no limitado a texto, imágenes, gráficos, logotipos, iconos, software, código fuente, diseño, estructura, selección y disposición, son propiedad de JETXCEL SAS y están protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual. Queda prohibida la reproducción, distribución, transmisión, publicación, modificación, creación de trabajos derivados o cualquier otro uso no autorizado de los materiales de esta página web sin el consentimiento previo por escrito de JETXCEL SAS, además de la idea en sí de la misma en esta página.`);
+  alert(`Aviso General de Derechos de Autor\n
+\tTodos los contenidos de esta página web, incluyendo pero no limitado a texto, imágenes, gráficos, logotipos, iconos, software, código fuente, diseño, estructura, selección y disposición, son propiedad de JETXCEL SAS y están protegidos por las leyes de derechos de autor y otras leyes de propiedad intelectual.\n
+\tQueda prohibida la reproducción, distribución, transmisión, publicación, modificación, creación de trabajos derivados o cualquier otro uso no autorizado de los materiales de esta página web sin el consentimiento previo por escrito de JETXCEL SAS, además de la idea en sí de la misma en esta página.\n
+\nPruebas Piloto y Números de Contacto:\n
+\tLas secciones denominadas "Pruebas Piloto" tienen como objetivo evaluar nuevas funcionalidades y servicios. Debido a que se encuentran en etapa de desarrollo, no nos hacemos responsables por el mal uso de la información allí expuesta.\n
+\tLos números de contacto proporcionados son únicamente para fines informativos y no representan un respaldo oficial. Su propósito es facilitar el contacto con posibles proveedores de servicios y contribuir al crecimiento económico de la región.`);
 });
